@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>とれもりグルメ！ Map ラーメン</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0-n7arrHSwqYK67F0C5fvrmYw2imEoFs&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div style="width: 100%; height: 60px; left: 0px; top: 0px; position: absolute; background: #272727"></div>
+    <div class="top-bar"><a href="../../">とれもりグルメ！</a></div>
+    </div>
+    <gmp-map center="37.50654895938994, 139.93401642525154" zoom="14" map-id="DEMO_MAP_ID">
+        <!--中華-->
+        <gmp-advanced-marker position="37.51682517924013, 139.94826641357025" title="中華料理福苑"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.51800502650105, 139.9169329604785" title="重慶飯店"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.50682261212071, 139.93052004068525" title="中国料理 黄鶴楼"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.50201403603788, 139.94356142386488"
+            title="チャイナレストランジャスミン"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49102225886988, 139.94118822179544" title="菜華楼"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.4957742573977, 139.93592300354538" title="手作り餃子ミナ"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49741519517763, 139.93203670172613" title="悟空林"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.498648191222436, 139.93024620098527" title="中華の店 とんがらし"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.503451506280484, 139.91411909696697" title="中華十八番"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.479567481281336, 139.9161427277975" title="大龍軒"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.476525424191784, 139.9245326826858" title="大三元食堂"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.4726718697559, 139.92383270001983" title="中華飯店 利喜"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.497568181401626, 139.92812619188467"
+            title="和風れすとらん くいしん坊"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.50276053183503, 139.91183253140574" title="ラメール"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49167480681315, 139.92714665590043" title="飲食処ぱんどら"></gmp-advanced-marker>
+    </gmp-map>
+    
+
+    <div class="footer">
+        <span>製作者:れす、とっとこ、ルナ<br /></span>
+        <span>2023年 蒼翔祭 Hackathon 制作物</span>
+    </div>
+</body>
+
+</html>

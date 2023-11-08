@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>とれもりグルメ！ Map 定食</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0-n7arrHSwqYK67F0C5fvrmYw2imEoFs&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div style="width: 100%; height: 60px; left: 0px; top: 0px; position: absolute; background: #272727"></div>
+    <div class="top-bar"><a href="../../">とれもりグルメ！</a></div>
+    </div>
+
+    <gmp-map center="37.50654895938994, 139.93401642525154" zoom="14" map-id="DEMO_MAP_ID">
+        <!--洋食-->
+        <gmp-advanced-marker position="37.49724673245448, 139.93235261923815" title="トラットリア・ネモ"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49784256358615, 139.9304139716079" title="風街亭"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49982765679526, 139.92292576864585" title="リストランテ パパカルド"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49700139214337, 139.92807390822458" title="レストランぴろす"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.4965820077228, 139.92860798616914" title="Restaurant&Bar Beans ビーンズ"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.4959064738164, 139.928704231957" title="レストラン マーティン"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49540690246866, 139.9268060927076" title="ラ レゾン"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49326193895509, 139.9326133495038" title="葡萄屋"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.495032289632384, 139.93172603041103" title="キッチン瓦"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49479592979176, 139.93135335101448" title="Bistroコロンボ"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.491287797545446, 139.92696310996484" title="お肉とワインの店 セピア"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.49166191696439, 139.92140404601022" title="レストランタイム"></gmp-advanced-marker>
+    </gmp-map>
+</body>
+
+
+
+
+<div class="footer">
+    <span>製作者:れす、とっとこ、ルナ<br /></span>
+    <span>2023年 蒼翔祭 Hackathon 制作物</span>
+</div>
+
+</html>

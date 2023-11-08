@@ -1,0 +1,151 @@
+* {
+    margin:0; padding:0;
+  }
+  header {
+    width: 100%;
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  header .headline{
+    font-size: 32px;
+  }
+  .nav-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+  }
+  .nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+  }
+/* 基本スタイル */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* マップコンテナ */
+gmp-map {
+  height: 80%;
+  width: 100%; /* 100%に更新 */
+  margin-top: 0px;
+  padding: 0;
+  box-sizing: border-box; /* paddingとborderを幅と高さの合計に含める */
+}
+
+/* トップバーのスタイル */
+.top-bar {
+  width: 100%;
+  height: 60px;
+  background: #272727;
+  color: white;
+  text-align: center;
+  line-height: 60px; /* テキストを垂直方向に中央に配置 */
+  position: relative; /* absoluteからrelativeに変更でより良い制御を実現 */
+}
+
+/* フッターのスタイル */
+.footer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box; /* 幅の計算にpaddingを含める */
+  text-align: center;
+  position: relative; /* absoluteからrelativeに変更でより良い制御を実現 */
+}
+
+/* モバイルデバイス用のメディアクエリ */
+@media (max-width: 768px) {
+  /* モバイルスクリーン用のスタイル調整 */
+  gmp-map {
+      margin-top: 10px;
+      height: 60%;
+  }
+
+  .top-bar {
+      height: 50px;
+      line-height: 50px;
+  }
+
+  .footer {
+      padding: 10px;
+  }
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* 追加: すべての要素にボックスサイズ指定 */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar a {
+  color: white; /* リンクの色を白に指定 */
+  display: block; /* リンク全体をクリック可能に */
+  text-decoration: none;
+  height: 100%;
+}
+
+/* スタイルを直接HTMLに書くのではなく、クラスで管理 */
+.rectangle {
+  position: absolute;
+  background: #D9D9D9;
+  width: 300px;
+  height: 410px;
+}
+
+.image-container {
+  position: absolute;
+  width: 262px;
+  height: 186px;
+}
+
+.text-container {
+  position: absolute;
+  text-align: center;
+  color: black;
+  font-size: 36px;
+  font-family: Work Sans;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.description {
+  font-size: 20px;
+}
+
+/* モバイルデバイス用のスタイル調整 */
+@media (max-width: 768px) {
+  /* すべての絶対配置を削除し、フレックスボックスで管理 */
+  .rectangle, .image-container, .text-container, .description {
+    position: static; /* absoluteからstaticに変更 */
+    width: auto; /* フル幅に */
+    margin: 10px auto; /* 中央寄せ */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* 影を追加 */
+  }
+
+  .text-container {
+    font-size: 24px; /* モバイルでは文字サイズを小さく */
+  }
+
+  .description {
+    font-size: 16px; /* 説明のテキストサイズを小さく */
+  }
+
+  .top-bar {
+    height: 50px;
+    line-height: 50px; /* テキストを中央に */
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>とれもりグルメ！ Map 定食</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0-n7arrHSwqYK67F0C5fvrmYw2imEoFs&callback=console.debug&libraries=maps,marker&v=beta">
+        </script>
+    <link rel="stylesheet" href="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+    <div style="width: 100%; height: 60px; left: 0px; top: 0px; position: absolute; background: #272727"></div>
+<div class="top-bar"><a href="../../">とれもりグルメ！</a></div>
+    <gmp-map center="37.50654895938994, 139.93401642525154" zoom="14" map-id="DEMO_MAP_ID">
+         <!--定食-->
+        <gmp-advanced-marker position="37.51075601524905, 139.93938083464946" title="わたなべ食堂"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.5022159220792, 139.92902362829025" title="若松食堂"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.50497742288657, 139.921019218306" title="ハトヤ食堂分店"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.496872180227, 139.92787963157386" title="国古食堂"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.498517299574736, 139.91672404327792" title="味平食堂"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.507983645483314, 139.90766944385047" title="やまあ食堂"></gmp-advanced-marker>
+        <gmp-advanced-marker position="37.517552524397075, 139.94158768271666" title="Yaki家"></gmp-advanced-marker>
+    </gmp-map>
+</body>
+
+
+
+
+<div class="footer">
+    <span>製作者:れす、とっとこ、ルナ<br /></span>
+    <span>2023年 蒼翔祭 Hackathon 制作物</span>
+</div>
+
+</html>
